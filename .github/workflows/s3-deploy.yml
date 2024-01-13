@@ -6,6 +6,7 @@ on:
     paths:
       - "content/**"
       - ".github/workflows/s3-deploy.yml"
+      - "hugo.toml"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
