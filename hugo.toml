@@ -1,0 +1,24 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[params]
+name = 'Simba'
+
+[deployment]
+
+[[deployment.targets]]
+name = "production"
+
+# URL specifies the Go Cloud Development Kit URL to deploy to. Examples:
+# URL = "<FILL ME IN>"
+
+# Google Cloud Storage -- see https://gocloud.dev/howto/blob/#gcs
+#URL = "gs://<Bucket Name>"
+
+# Amazon Web Services S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+URL = "s3://hugo.efcorebeginner.com?region=us-east-1"
+
+# Microsoft Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+#URL = "azblob://$web"
